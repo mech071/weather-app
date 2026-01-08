@@ -1,5 +1,4 @@
 const btn=document.querySelector(".btn");
-const form=document.querySelector(".search");
 const input=document.querySelector(".input");
 const container=document.querySelector(".container");
 const api="YGTNR5QNDJV2BXP2E3A876RPX";
@@ -14,7 +13,7 @@ btn.addEventListener("click", async (e) => {
         }
         catch(error) {
             console.error(error);
-            displayError(error);
+            displayError(error.message);
         }
     }
     else {
@@ -44,11 +43,10 @@ function display(data) {
     container.appendChild(tempDisplay);
     tempDisplay.classList.add("temp");
     const humidityDisplay = document.createElement("div");
-    humidityDisplay.textContent=`Humidity: ${humidity}`;
+    humidityDisplay.textContent=`Humidity: ${humidity}%`;
     container.appendChild(humidityDisplay);
     humidityDisplay.classList.add("humidity");
     const descDisplay = document.createElement("div");
-    descDisplay.textContent=conditions;
     descDisplay.textContent=conditions.charAt(0).toUpperCase() + conditions.slice(1);
     container.appendChild(descDisplay);
     descDisplay.classList.add("desc");
