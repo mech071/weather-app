@@ -55,6 +55,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.loader {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 .container {
     border: 2px solid black;
     display: flex;
