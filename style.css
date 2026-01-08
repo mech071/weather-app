@@ -4,22 +4,19 @@
 
 html {
     min-height: 100%;
-    background: linear-gradient(
-        135deg,
-        #1de2c1 0%,
-        #b6fdff 35%,
-        #42ffc0 65%,
-        #1b5eec 100%
-    );
 }
 
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100%;
+    background-image: url(https://t4.ftcdn.net/jpg/04/61/23/23/360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +50,8 @@ body {
     background-color: rgb(70, 141, 202);
 }
 
-.input,.btn {
+.input,
+.btn {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -61,17 +59,15 @@ body {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 50px;
-    background: linear-gradient(
-        135deg,
-        #1dbfff 0%,
-        #3bf3b6 35%,
-        #37c2b6 65%,
-        #4184ac 100%
-    );
+    background: linear-gradient(135deg,
+            #b2e9ff 0%,
+            #3bf3b6 35%,
+            #76f3e9 65%,
+            #4184ac 100%);
     color: rgb(7, 6, 5);
     box-shadow: 2px 2px 5px rgb(56, 7, 63);
     border-radius: 5px;
@@ -100,6 +96,33 @@ body {
     font-weight: 600;
     color: #000000d2;
 }
+
+@media (max-width: 1000px) {
+    .input {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .container {
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .city {
+        font-size: 1.4rem;
+    }
+
+    .temp {
+        font-size: 1.2rem;
+    }
+}
+
+
 
 .hidden {
     display: none;
