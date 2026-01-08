@@ -10,7 +10,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100%;
-    background-image: url(https://t4.ftcdn.net/jpg/04/61/23/23/360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg);
+    background-image: url(https://images.unsplash.com/photo-1593978301851-40c1849d47d4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYXRoZXIlMjBhcHB8ZW58MHx8MHx8fDA%3D);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,22 +61,19 @@ body {
 }
 
 .container {
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 50px;
-    background: linear-gradient(135deg,
-            #b2e9ff 0%,
-            #3bf3b6 35%,
-            #76f3e9 65%,
-            #4184ac 100%);
-    color: rgb(7, 6, 5);
-    box-shadow: 2px 2px 5px rgb(56, 7, 63);
-    border-radius: 5px;
+    padding: 24px 28px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    color: #1e1e1e;
 }
+
 
 .city {
     font-size: 2rem;
