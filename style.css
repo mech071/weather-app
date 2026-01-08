@@ -9,7 +9,6 @@ html {
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100%;
     background-image: url(bg-img.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -17,8 +16,9 @@ body {
 }
 
 .main {
-    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
